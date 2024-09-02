@@ -1,0 +1,222 @@
+
+body{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 27.5% 55% 27.5%;
+    gap: 10px;
+    height: 100vh;
+    font-size: 18px;
+    font-family: "Hanken Grotesk", sans-serif;
+    
+}
+
+.container{
+    grid-area: 2/2/3/3;
+   display: flex;
+   
+
+}
+/*styling the left side of the container*/
+
+.card{
+    text-align: center;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 45%;
+    padding: 20px;
+    border-radius: 30px;
+}
+.card-title{
+    color: white;
+    opacity: 0.8;
+    letter-spacing: 3px;
+}
+
+.card-marks{
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    margin-left:23.5%;
+    margin-top: 10%;
+     
+
+}
+.card-remark, .card-info{
+    color: white;
+    
+}
+.card-remark{
+    font-size: 1.5rem;
+}
+.card-info{
+    opacity: 0.6;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.card-marks-big{
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 0px ;
+    margin-top: 25px;
+}
+.card-marks-light{
+    opacity: 0.6;
+    color: white;
+}
+
+
+/* css styling of right side*/ 
+
+.summary{
+    padding: 20px 30px 30px 30px;
+    width: 55%;
+  
+
+}
+.summary>div:first-child{
+    color: hsl(224, 30%, 27%); 
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;    
+
+}
+
+.button-continue{
+    background-color:hsl(224, 30%, 27%);
+    border: none;
+    width: 100%;
+    border-radius: 25px;
+    padding: 15px;
+    color: white;
+    font-size: 1rem;
+    margin-top: 30px;
+}
+.button-continue:hover{
+    background-color: rgb(180, 180, 243);
+    color: black;
+}
+.summary-card{
+    width: 100%;
+    height: 100%;
+   display: block;
+}
+
+.result-container{
+    margin-right: 20px;
+}
+
+.result-dark-text{
+    color: black;
+    font-weight: bold;
+    opacity: 0.7;
+    margin-right: 10px;
+}
+
+.result-light-text{
+    color: black;
+    opacity:0.4;
+}
+.s-card{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    height: 50px;
+    border-radius: 16px;
+}
+img{
+    margin-left: 20px;
+    margin-top: 15px;
+    height: 25px;
+    
+}
+.title{
+    margin-left: 30px;
+    margin-top: 15px;
+  
+}
+.result{
+    margin-top: 15px;
+}
+
+.reaction{
+    display: flex;
+    color: hwb(0 34% 0%);
+    background-color: hsl(0, 20%, 96%);;
+}
+.reaction-result{
+    display: flex;
+    margin-left: auto;  
+    
+}
+
+
+.memory{
+    display: flex;
+    color: hsl(39, 100%, 56%);
+    background-color:  hsl(34, 30%, 95%);;
+}
+.memory-result{
+    display: flex;
+    margin-left: auto;  
+}
+
+
+.verbal{
+    display: flex;
+    color: hsl(166, 100%, 37%);
+    background-color:  hsl(180, 29%, 94%);
+    
+}
+.verbal-result{
+    display: flex;
+    margin-left: auto;  
+}
+
+
+
+
+.visual{
+    display: flex;
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(221, 100%, 96%);
+}
+.visual-result{
+    display: flex;
+    margin-left: auto;  
+
+}
+
+
+
+/*responsivness for less than 1160px*/
+
+@media (max-width:768px) {
+    body{
+        
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        height: 100vh;
+        margin: 0px;
+
+    }
+   .container{
+    display: block;
+    
+   }
+    .card{
+        width: 100%;
+    }
+    .summary{
+        width: 100%;
+    }
+
+
+
+
+}
